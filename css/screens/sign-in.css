@@ -1,0 +1,62 @@
+.welcome-header {
+  margin-top: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-header__title {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--yellow);
+}
+
+.welcome-header__text {
+  margin-bottom: 3rem;
+  width: 30%;
+  opacity: 0.7;
+}
+
+#sign-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+#sign-form input {
+  margin-bottom: 1rem;
+  border: none;
+  padding: 1rem 0;
+  font-size: large;
+}
+
+#sign-form input:not([type="submit"]) {
+  border-bottom: 1px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#sign-form input::placeholder {
+  color: #ccc;
+}
+
+#sign-form input:focus {
+  border-color: var(--yellow);
+}
+
+#sign-form input[type="submit"] {
+  background-color: var(--yellow);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+#sign-form a {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--yellow);
+  text-decoration: none;
+  font-weight: bold;
+}
