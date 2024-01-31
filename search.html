@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIKITAKA | Search</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span id="time"></span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-full"></i>
+      </div>
+    </div>
+
+    <header class="header">
+      <h1 class="header__title">Search</h1>
+      <div class="header__icons">
+        <span>
+          <i class="fa-solid fa-magnifying-glass-location fa-xl"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-magnifying-glass-dollar fa-xl"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-gear fa-xl"></i>
+        </span>
+      </div>
+    </header>
+
+    <main style="padding: 1rem">
+      <div class="search__icons">
+        <div class="search__icons--icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span> QR Code </span>
+        </div>
+        <div class="search__icons--icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span>Contract</span>
+        </div>
+        <div class="search__icons--icon">
+          <i class="fa-regular fa-id-card"></i>
+          <span>ID</span>
+        </div>
+        <div class="search__icons--icon">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+
+      <div class="recommended-friends">
+        <h3 class="recommended-friends__title">Recommended Friends</h3>
+        <span>You have no recommended friends.</span>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h3>Open Chat</h3>
+          <span>
+            Go to Openchat Home
+            <i class="fa-solid fa-chevron-right fa-2xs"></i>
+          </span>
+        </div>
+        <div class="open-chat__content">
+          <div class="open-chat__content--column">
+            <h4 class="open-chat__content--title">Han Mone</h4>
+            <h5 class="open-chat__content--hashtags">#SunsetKiss</h5>
+            <div class="open-chat__content--members">
+              <img
+                src="https://i.namu.wiki/i/Q_frQU6iDAd35g2XeKGyX7QQtQs-fPCVLqIyW7Nd0s3-4HiT5vk5dRUPbHsX0sPtGQ1Fk4B1fyP8LD92AcN5gGfOKI9dZuB7VJnUZJW6C8a5_jB0OQXPs9XtPEtA47mQaqt8AhqSjJTIhId6RBHphQ.webp"
+              />
+              <span class="open-chat__content--member-count">550 members</span>
+              <div class="divider"></div>
+              <span class="open-chat__content--members-status">Active</span>
+            </div>
+          </div>
+          <div class="open-chat__content--column">
+            <div class="open-chat__content--thumbnail">
+              <img
+                src="https://i.namu.wiki/i/K21SmxjvUdK-dIqTEX7md_Zwo84LYHUeTRHDeNmvX7GC5Gx_nC8-DvRG5Z-I2kHfBKzdxAOiFUlCsRe0nqow39D-Z16Iw9QgGCoTE-f3mKUU2MPjrHmmc14j67_Vw9_N5k3uBxdGfKiBPYotS2dueg.webp"
+              />
+              <div class="open-chat__content--like-count">
+                <i class="fa-solid fa-heart fa-xs"></i>
+                <span>608</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="friends.html">
+            <i class="fa-solid fa-user-group fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chats.html">
+            <span class="noti--msg nav__noti--msg">31</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="search.html">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="#">
+            <span class="noti nav__noti"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/b544fcb91e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
