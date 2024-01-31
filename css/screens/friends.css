@@ -1,0 +1,24 @@
+#friends-names-display {
+  display: block;
+  text-align: center;
+  background-color: #eee;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+#friends-names-display i {
+  color: #ccc;
+}
+
+.friends {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.friends__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #aaa;
+  margin: 0 1rem;
+}
