@@ -5,6 +5,7 @@
 @import "components/header.css";
 @import "components/navigation-bar.css";
 @import "components/profile.css";
+@import "components/notification.css";
 
 /* Screens */
 @import "screens/sign-in.css";

@@ -19,25 +19,12 @@
 
 .nav__noti {
   position: absolute;
-  background-color: tomato;
-  width: 0.35rem;
-  height: 0.35rem;
-  border-radius: 50%;
   bottom: 2rem;
   left: 2rem;
 }
 
-.nav__noti__msg {
+.nav__noti--msg {
   position: absolute;
-  background-color: tomato;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
   bottom: 1.1rem;
   left: 1.1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #eee;
-  font-weight: bold;
 }

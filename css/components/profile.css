@@ -1,7 +1,18 @@
+.profile {
+  justify-content: space-between;
+}
+
 .profile,
 .profile__column:first-child {
   display: flex;
   align-items: center;
+}
+
+.profile__column:last-child {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .profile__img--large {
@@ -33,5 +44,11 @@
 
 .profile__text {
   margin-top: 0.5rem;
+  color: #aaa;
+}
+
+.profile__column--time {
+  display: block;
+  margin-bottom: 0.5rem;
   color: #aaa;
 }

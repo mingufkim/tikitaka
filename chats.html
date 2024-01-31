@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIKITAKA | Chats</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span id="time"></span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-full"></i>
+      </div>
+    </div>
+
+    <header class="header">
+      <h1 class="header__title">Chats</h1>
+      <div class="header__icons">
+        <span>
+          <i class="fa-solid fa-comments fa-xl"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-comment-dollar fa-xl"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-gear fa-xl"></i>
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <div class="profile">
+        <div class="profile__column">
+          <img
+            src="https://i.namu.wiki/i/HBd-3DXt1XuHTB0TKfqp1rUxd9qDZa6ziCMzdx_Xyl9IpXYtoaBL0FmTUQAkC8WUN3qR-TTFkk8QSA-9F9RxeJP3qoGXh_sC7_9uV_94TuPng90ZhX-ebymKN-i3M4yD0G09hHqEQY-us0mIjeHZ8g.webp"
+            class="profile__img profile__img--small"
+          />
+          <div class="profile__info">
+            <h3 class="profile__name">Geum La Hui</h3>
+            <h4 class="profile__text">Come on, you're attracted to me, too.</h4>
+          </div>
+        </div>
+        <div class="profile__column">
+          <span class="profile__column--time">20:24</span>
+          <div class="noti--msg">31</div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="friends.html">
+            <i class="fa-solid fa-user-group fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chats.html">
+            <span class="noti--msg nav__noti--msg">31</span>
+            <i class="fa-solid fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="#">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="#">
+            <span class="noti nav__noti"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/b544fcb91e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
