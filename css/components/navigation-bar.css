@@ -1,0 +1,44 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__a {
+  position: relative;
+  color: #333;
+}
+
+.nav__noti {
+  position: absolute;
+  background-color: tomato;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.nav__noti__msg {
+  position: absolute;
+  background-color: tomato;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  bottom: 1.1rem;
+  left: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  font-weight: bold;
+}

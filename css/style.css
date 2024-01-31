@@ -2,6 +2,7 @@
 
 /* Components */
 @import "components/status-bar.css";
+@import "components/navigation-bar.css";
 
 /* Screens */
 @import "screens/sign-in.css";
@@ -12,4 +13,9 @@ body {
 
 input:focus {
   outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
