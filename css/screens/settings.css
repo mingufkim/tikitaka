@@ -1,0 +1,18 @@
+.settings__setting {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting__column:last-child {
+  color: #aaa;
+}
+
+.settings__setting i {
+  color: #aaa;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}

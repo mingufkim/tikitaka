@@ -1,0 +1,19 @@
+.subheader {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subheader__column:first-child {
+  margin-right: auto;
+}
+
+.subheader__column:last-child {
+  margin-left: auto;
+}
+
+.subheader__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
