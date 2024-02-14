@@ -1,0 +1,154 @@
+#chat {
+  background-color: #bacee0;
+  height: 1000vh;
+}
+
+#chat .status-bar {
+  z-index: 2;
+  background-color: #bacee0;
+}
+
+#chat .subheader {
+  z-index: 1;
+  background-color: #bacee0;
+  position: sticky;
+  top: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chat {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: #4f585f;
+  background-color: #a7b9c9;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.msg-row {
+  width: 100%;
+  display: flex;
+}
+
+.msg-row img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-right: 0.625rem;
+  margin-bottom: 2rem;
+}
+
+.msg__sender {
+  color: #262626;
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.625rem;
+}
+
+.msg__content {
+  display: flex;
+  align-items: flex-end;
+}
+
+.msg {
+  background-color: #fff;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  margin-right: 0.625rem;
+}
+
+.msg__time {
+  color: #262626;
+  font-weight: lighter;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.reverse {
+  justify-content: flex-end;
+}
+
+.reverse .msg {
+  background-color: #ffeb33;
+  margin-right: 0;
+  margin-left: 0.625rem;
+}
+
+.reverse .msg__content {
+  flex-direction: row-reverse;
+}
+
+.msg-box {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.msg-box__column:first-child {
+  width: 5%;
+}
+
+.msg-box__column:last-child {
+  position: relative;
+  width: 95%;
+}
+
+.msg-box__column:first-child i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.msg-box__column:first-child i:hover {
+  cursor: pointer;
+  color: #ffeb33;
+}
+
+.msg-box input {
+  padding: 1rem;
+  width: 90%;
+  border: var(--divider);
+  border-radius: 1rem;
+}
+
+.msg-box__column:last-child>i,
+button {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.5rem;
+}
+
+.msg-box__column:last-child>i {
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.msg-box__column button {
+  background-color: #ffeb33;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.msg-box__column button:focus,
+.msg-box__column button:active {
+  background-color: inherit;
+}

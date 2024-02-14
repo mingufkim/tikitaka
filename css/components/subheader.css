@@ -5,12 +5,26 @@
   justify-content: center;
 }
 
+.subheader__column {
+  width: 33%;
+}
+
 .subheader__column:first-child {
   margin-right: auto;
 }
 
+.subheader__column:nth-child(2) {
+  text-align: center;
+}
+
 .subheader__column:last-child {
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subheader__column span:last-child {
+  margin-left: 1rem;
 }
 
 .subheader__title {

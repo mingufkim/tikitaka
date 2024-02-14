@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIKITAKA | Chat</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="chat">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span id="time"></span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-full"></i>
+      </div>
+    </div>
+
+    <header class="subheader">
+      <div class="subheader__column">
+        <a href="chats.html">
+          <i class="fa-solid fa-chevron-left fa-2xl"></i>
+        </a>
+      </div>
+      <div class="subheader__column">
+        <h1 class="subheader__title">Geum La Hui</h1>
+      </div>
+      <div class="subheader__column">
+        <span><i class="fa-solid fa-search fa-2xl"></i></span>
+        <span>
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </span>
+      </div>
+    </header>
+
+    <main class="chat" style="padding: 1rem">
+      <div class="chat__timestamp">Wednesday, February 14, 2024</div>
+
+      <div class="msg-row">
+        <img
+          src="https://img2.sbs.co.kr/img/sbs_cms/WE/2023/09/04/cyB1693791821534-666-968.jpg"
+        />
+        <div class="msg__contents">
+          <span class="msg__sender">Geum La Hui</span>
+          <div class="msg__content">
+            <span class="msg">Come on, you're attracted to me, too.</span>
+            <span class="msg__time">2:15</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="msg-row reverse">
+        <div class="msg__contents">
+          <div class="msg__content">
+            <span class="msg">Here's looking at you, kid.</span>
+            <span class="msg__time">4:33</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="msg-box">
+      <div class="msg-box__column">
+        <i class="fa-solid fa-plus fa-xl"></i>
+      </div>
+      <div class="msg-box__column">
+        <input type="text" />
+        <i class="fa-regular fa-face-smile-beam fa-xl"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up fa-xl"></i>
+        </button>
+      </div>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/b544fcb91e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
