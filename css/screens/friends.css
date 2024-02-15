@@ -1,0 +1,48 @@
+#friends-names-display {
+  display: block;
+  text-align: center;
+  background-color: #eee;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+#friends-names-display i {
+  color: #ccc;
+}
+
+.friends {
+  border-top: var(--divider);
+  padding-top: 1rem;
+}
+
+.friends__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #aaa;
+  margin: 0 1rem;
+}
+
+@keyframes loading {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash {
+  background-color: var(--yellow);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  animation: loading 1s ease-in-out 1s forwards;
+}

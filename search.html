@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIKITAKA | Search</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span id="time"></span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-full"></i>
+      </div>
+    </div>
+
+    <header class="header">
+      <h1 class="header__title">Search</h1>
+      <div class="header__icons">
+        <span>
+          <i class="fa-solid fa-magnifying-glass-location fa-xl"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-magnifying-glass-dollar fa-xl"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-gear fa-xl"></i>
+        </span>
+      </div>
+    </header>
+
+    <main style="padding: 1rem">
+      <div class="icon-row">
+        <div class="icon-row--icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span> QR Code </span>
+        </div>
+        <div class="icon-row--icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span>Contract</span>
+        </div>
+        <div class="icon-row--icon">
+          <i class="fa-regular fa-id-card"></i>
+          <span>ID</span>
+        </div>
+        <div class="icon-row--icon">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+
+      <div class="recommended-friends">
+        <h3 class="recommended-friends__title">Recommended Friends</h3>
+        <span>You have no recommended friends.</span>
+      </div>
+
+      <div class="fan-chat">
+        <div class="fan-chat__header">
+          <h3>Fan Chat</h3>
+          <span>
+            Go to Fan Chat Home
+            <i class="fa-solid fa-chevron-right fa-2xs"></i>
+          </span>
+        </div>
+        <div class="fan-chat__content">
+          <div class="fan-chat__content--column">
+            <h4 class="fan-chat__content--title">MONE</h4>
+            <h5 class="fan-chat__content--hashtags">#SunsetKiss #KPop</h5>
+            <div class="fan-chat__content--members">
+              <img
+                src="https://img2.sbs.co.kr/img/sbs_cms/WE/2023/09/04/sK91693791888613-666-968.jpg"
+              />
+              <span class="fan-chat__content--member-count">550 members</span>
+              <div class="divider"></div>
+              <span class="fan-chat__content--members-status">Active</span>
+            </div>
+          </div>
+          <div class="fan-chat__content--column">
+            <div class="fan-chat__content--thumbnail">
+              <img
+                src="https://image.bugsm.co.kr/album/images/200/40922/4092232.jpg?version=20231022063516.0"
+              />
+              <div class="fan-chat__content--like-count">
+                <i class="fa-solid fa-heart fa-xs"></i>
+                <span>608</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="friends.html">
+            <i class="fa-solid fa-user-group fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chats.html">
+            <span class="noti--msg nav__noti--msg">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="search.html">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="more.html">
+            <span class="noti nav__noti"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/b544fcb91e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

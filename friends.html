@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIKITAKA | Friends</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span id="time"></span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-full"></i>
+      </div>
+    </div>
+
+    <header class="header">
+      <h1 class="header__title">Friends</h1>
+      <div class="header__icons">
+        <span>
+          <i class="fa-solid fa-user-plus fa-xl"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-users fa-xl"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-gear fa-xl"></i>
+        </span>
+      </div>
+    </header>
+
+    <a id="friends-names-display" href="#">
+      <i class="fa-solid fa-circle-info fa-sm"></i>
+      Friends' Names Display
+      <i class="fa-solid fa-chevron-right fa-sm"></i>
+    </a>
+
+    <main>
+      <div class="profile">
+        <div class="profile__column">
+          <img
+            src="https://img2.sbs.co.kr/img/sbs_cms/WE/2023/09/04/IKp1693791744907-666-968.jpg"
+            class="profile__img"
+          />
+          <div class="profile__info">
+            <h3 class="profile__name profile__name--em">Matthew Lee</h3>
+          </div>
+        </div>
+        <div class="profile__column"></div>
+      </div>
+
+      <div class="friends">
+        <div class="friends__header">
+          <h3 class="friends__title">Channel</h3>
+          <span class="friends__count">
+            1
+            <i class="fa-solid fa-chevron-up fa-sm"></i>
+          </span>
+        </div>
+        <div class="profile">
+          <div class="profile__column">
+            <img
+              src="https://i.namu.wiki/i/E1Q7QKHGrDsuyQ3p96unCKTYDileoGXXXR2KHR27vDo7ZrJ1SeGP3Fq8Le1_3jMfeREK1TuExa8udeKx3EufnLeiMeubLwrEPWVUoLy4vOolkMfZMDmR0LM3ZxuP3zsRme-AfNPXxeMrl3FdhhMcEw.webp"
+              class="profile__img profile__img--small"
+            />
+            <div class="profile__info">
+              <h3 class="profile__name">TIKITAKA</h3>
+            </div>
+          </div>
+          <div class="profile__column"></div>
+        </div>
+      </div>
+
+      <div class="friends">
+        <div class="friends__header">
+          <h3 class="friends__title">Friends</h3>
+          <span class="friends__count">
+            1
+            <i class="fa-solid fa-chevron-up fa-sm"></i>
+          </span>
+        </div>
+        <div class="profile">
+          <div class="profile__column">
+            <img
+              src="https://img2.sbs.co.kr/img/sbs_cms/WE/2023/09/04/cyB1693791821534-666-968.jpg"
+              class="profile__img profile__img--small"
+            />
+            <div class="profile__info">
+              <h3 class="profile__name">Geum La Hui</h3>
+            </div>
+          </div>
+          <div class="profile__column"></div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="friends.html">
+            <i class="fa-solid fa-user-group fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chats.html">
+            <span class="noti--msg nav__noti--msg">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="search.html">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="more.html">
+            <span class="noti nav__noti"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="splash">
+      <i class="fa-solid fa-message"></i>
+    </div>
+
+    <div id="mobile">
+      <p>Sorry, this app is only available on mobile.</p>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/b544fcb91e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

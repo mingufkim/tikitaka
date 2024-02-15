@@ -1,0 +1,131 @@
+.recommended-friends {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-top: var(--divider);
+  border-bottom: var(--divider);
+  color: #aaa;
+}
+
+.recommended-friends__title {
+  font-size: 1.125rem;
+
+}
+
+.recommended-friends span {
+  display: block;
+  margin: 6rem 0;
+  text-align: center;
+  font-size: 1.025rem;
+}
+
+.fan-chat__header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #aaa;
+}
+
+.fan-chat__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fan-chat__content--title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.fan-chat__content--hashtags {
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.fan-chat__content--members {
+  display: flex;
+  align-items: center;
+}
+
+.fan-chat__content--members img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.fan-chat__content--member-count {
+  font-size: 0.875rem;
+  opacity: 0.5;
+}
+
+.fan-chat__content--members .divider {
+  width: 1px;
+  height: 1rem;
+  background-color: #aaa;
+  opacity: 0.5;
+  margin: 0 0.5rem;
+}
+
+.fan-chat__content--members-status {
+  color: var(--yellow);
+}
+
+.fan-chat__content--thumbnail {
+  position: relative;
+}
+
+.fan-chat__content--thumbnail img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+}
+
+.fan-chat__content--like-count {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 0.25rem;
+  border-radius: 1rem;
+  bottom: 0.25rem;
+  right: 0.25rem;
+}
+
+.fan-chat__content--like-count span {
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+    color: #ff6865;
+  }
+
+  25% {
+    transform: scale(1.3);
+    color: #ff4f4b;
+  }
+
+  50% {
+    transform: scale(1);
+    color: #ff3632;
+  }
+
+  75% {
+    transform: scale(1.3);
+    color: #ff1d18;
+  }
+
+  100% {
+    transform: scale(1);
+    color: #ff0500;
+  }
+}
+
+.fan-chat__content--like-count:hover .fa-heart {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}

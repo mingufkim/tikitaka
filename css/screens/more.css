@@ -1,0 +1,38 @@
+.suggestions {
+  margin-top: 2rem;
+  padding: 2rem;
+  border-top: var(--divider);
+}
+
+.suggestions__title {
+  margin-bottom: 2rem;
+  color: #aaa;
+}
+
+.suggestions__icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.suggestions__icon {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.suggestions__icon-logo {
+  margin-bottom: 1rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--yellow);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggestions__icon-logo i {
+  font-size: 2rem;
+  color: #fff;
+}
