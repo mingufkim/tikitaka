@@ -8,6 +8,7 @@
 @import "components/profile.css";
 @import "components/notification.css";
 @import "components/icon-row.css";
+@import "components/mobile.css";
 
 /* Screens */
 @import "screens/sign-in.css";

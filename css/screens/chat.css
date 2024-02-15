@@ -1,6 +1,6 @@
 #chat {
   background-color: #bacee0;
-  height: 1000vh;
+  height: 500vh;
 }
 
 #chat .status-bar {
@@ -17,11 +17,43 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateY(-0.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .chat {
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn .5s linear;
+}
+
+@keyframes vibration {
+  0% {
+    transform: translateX(-0.25rem);
+  }
+
+  50% {
+    transform: translateX(0.25rem);
+  }
+
+  100% {
+    transform: translateX(-0.25rem);
+  }
 }
 
 .chat__timestamp {
@@ -31,11 +63,32 @@
   padding: 0.5rem;
   margin-bottom: 1rem;
   font-size: 0.875rem;
+  animation: vibration .25s linear;
+  animation-iteration-count: 5;
+}
+
+@keyframes row {
+  0% {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
 }
 
 .msg-row {
   width: 100%;
   display: flex;
+  animation: row 2s linear;
 }
 
 .msg-row img {
@@ -77,10 +130,28 @@
   justify-content: flex-end;
 }
 
+@keyframes rowReverse {
+  0% {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .reverse .msg {
   background-color: #ffeb33;
   margin-right: 0;
   margin-left: 0.625rem;
+  animation: rowReverse 2s linear;
 }
 
 .reverse .msg__content {
@@ -97,6 +168,7 @@
   align-items: center;
   padding: 1rem;
   box-sizing: border-box;
+  transition: all .5s ease-in-out;
 }
 
 .msg-box__column:first-child {
@@ -125,6 +197,7 @@
   width: 90%;
   border: var(--divider);
   border-radius: 1rem;
+  transition: all .5s ease-in-out;
 }
 
 .msg-box__column:last-child>i,
@@ -151,4 +224,27 @@ button {
 .msg-box__column button:focus,
 .msg-box__column button:active {
   background-color: inherit;
+}
+
+.msg-box .msg-box__column:first-child,
+.msg-box .fa-face-smile-beam,
+.msg-box button {
+  transition: opacity 1s ease-in-out;
+}
+
+.msg-box:focus-within .msg-box__column:first-child,
+.msg-box:focus-within .fa-face-smile-beam,
+.msg-box:focus-within button {
+  opacity: 0;
+}
+
+.msg-box:focus-within {
+  transform: translateY(5rem);
+}
+
+.msg-box:focus-within input {
+  width: 94vw;
+  transform: translateX(-5%) translateY(-5rem);
+  box-shadow: 0 0 0.5rem 0.25rem #ffeb33;
+  border-radius: 1rem;
 }
