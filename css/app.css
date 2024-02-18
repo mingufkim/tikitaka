@@ -6,14 +6,14 @@ body {
 
 #container {
   margin: 1rem;
-  padding-top: 21rem;
+  padding: 1rem;
 }
 
 .sign-in {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1rem;
+  margin: 1rem;
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: lighter;
@@ -51,4 +51,13 @@ body {
   color: inherit;
   background-color: #333;
   font-size: 2rem;
+}
+
+#advice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
 }

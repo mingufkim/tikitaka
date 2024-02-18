@@ -9,6 +9,8 @@ document.querySelector('#app').innerHTML = `
       <input required minlength="5" maxlength="20" type="text" />
       <input class="hidden" type="submit" />
     </form>
+
+    <h3 id="advice"></h3>
   </div>
 `
 
@@ -47,3 +49,25 @@ if (getUsername === null) {
 } else {
   hand(getUsername)
 }
+
+async function fetchAdvice() {
+  const res = await fetch('https://api.adviceslip.com/advice')
+  const data = await res.json()
+  return data.slip.advice
+}
+
+async function advise() {
+  const savedAdvice = localStorage.getItem('advice')
+  const savedTime = localStorage.getItem('time')
+
+  if (!savedTime || new Date().getTime() - savedTime > 60 * 60 * 1000) {
+    const advice = await fetchAdvice()
+    document.querySelector('#advice').innerHTML = advice
+    localStorage.setItem('advice', advice)
+    localStorage.setItem('time', new Date().getTime())
+  } else {
+    document.querySelector('#advice').innerHTML = savedAdvice
+  }
+}
+
+advise()
