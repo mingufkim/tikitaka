@@ -6,6 +6,7 @@ body {
 
 #container {
   margin: 1rem;
+  padding-top: 21rem;
 }
 
 .sign-in {
@@ -14,9 +15,18 @@ body {
   right: 0;
   padding: 1rem;
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: lighter;
   color: inherit;
+}
+
+#clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  font-size: 9rem;
+  font-weight: bolder;
 }
 
 .hidden {
@@ -28,8 +38,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
-  font-size: 2rem;
+  padding: 1.5rem;
+  font-size: 3rem;
   font-weight: bolder;
 }
 
@@ -37,8 +47,8 @@ body {
   outline: none;
   border: none;
   border-bottom: 1px solid #ccc;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   color: inherit;
   background-color: #333;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
