@@ -4,6 +4,14 @@ body {
   color: #ccc;
 }
 
+input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: inherit;
+  background-color: #333;
+}
+
 #container {
   margin: 1rem;
   padding: 1rem;
@@ -44,12 +52,7 @@ body {
 }
 
 #hello input {
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #ccc;
   margin: 1.5rem 0;
-  color: inherit;
-  background-color: #333;
   font-size: 2rem;
 }
 
@@ -60,4 +63,45 @@ body {
   align-items: center;
   padding: 1.5rem;
   font-size: 1.5rem;
+}
+
+#todos {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#todo input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  margin-right: 1rem;
+}
+
+#todo-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete {
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
 }
