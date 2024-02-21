@@ -1,5 +1,3 @@
-import openWeather from './api-keys.js'
-
 document.querySelector('#app').innerHTML = `
   <div id="container">
     <div id="weather">
@@ -175,7 +173,7 @@ loadTodos()
 
 const success = (position) => {
   const { latitude, longitude } = position.coords
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${openWeather.apiKey}&units=metric`
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${OPENWEATHER_API_KEY}&units=metric`
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
