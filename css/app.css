@@ -17,6 +17,35 @@ input {
   padding: 1rem;
 }
 
+#weather {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  padding: 1rem;
+}
+
+#weather div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#weather img {
+  margin-left: 1.25rem;
+}
+
+#temp {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#addr {
+  font-size: 0.875rem;
+  margin-left: 1.25rem;
+  font-weight: lighter;
+}
+
 .sign-in {
   position: absolute;
   top: 0;

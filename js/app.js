@@ -1,5 +1,17 @@
+import openWeather from './api-keys.js'
+
 document.querySelector('#app').innerHTML = `
   <div id="container">
+    <div id="weather">
+      <div>
+        <img />
+        <span id="temp"></span>
+      </div>
+      <div>
+        <span id="addr"></span>
+      </div>
+    </div>
+
     <a class="sign-in" href="sign-in.html">Sign in</a>
 
     <h1 id="clock"></h1>
@@ -160,3 +172,25 @@ const loadTodos = () => {
 }
 
 loadTodos()
+
+const success = (position) => {
+  const { latitude, longitude } = position.coords
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${openWeather.apiKey}&units=metric`
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      const weather = document.querySelector('#weather img')
+      const temp = document.querySelector('#temp')
+      const addr = document.querySelector('#addr')
+
+      weather.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+      temp.innerText = Math.floor(data.main.temp) + '°'
+      addr.innerText = data.name
+    })
+}
+
+const error = (error) => {
+  console.log('error', error)
+}
+
+navigator.geolocation.getCurrentPosition(success, error)
