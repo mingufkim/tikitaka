@@ -1,0 +1,136 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #333;
+  color: #ccc;
+}
+
+input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: inherit;
+  background-color: #333;
+}
+
+#container {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#weather {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  padding: 1rem;
+}
+
+#weather div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#weather img {
+  margin-left: 1.25rem;
+}
+
+#temp {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#addr {
+  font-size: 0.875rem;
+  margin-left: 1.25rem;
+  font-weight: lighter;
+}
+
+.sign-in {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: lighter;
+  color: inherit;
+}
+
+#clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  font-size: 9rem;
+  font-weight: bolder;
+}
+
+.hidden {
+  display: none;
+}
+
+#hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#hello input {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+
+#advice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#todos {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#todo input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  margin-right: 1rem;
+}
+
+#todo-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete {
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}

@@ -3,16 +3,10 @@
   height: 500vh;
 }
 
-#chat .status-bar {
-  z-index: 2;
-  background-color: #bacee0;
-}
-
 #chat .subheader {
-  z-index: 1;
   background-color: #bacee0;
   position: sticky;
-  top: 3rem;
+  top: 0;
   width: 100%;
   box-sizing: border-box;
 }
