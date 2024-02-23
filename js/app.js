@@ -36,6 +36,7 @@ const time = () => {
   const date = new Date()
   let hours = date.getHours()
   hours = hours > 12 ? hours - 12 : hours
+  hours = hours === 0 ? 12 : hours
   const minutes = date.getMinutes()
   clock.innerHTML = `${hours}:${minutes < 10 ? '0' + minutes : minutes}`
 }
@@ -170,6 +171,8 @@ const loadTodos = () => {
 }
 
 loadTodos()
+
+const OPENWEATHER_API_KEY = 'b5e9b101dc02b7729d2f8643cdf2f318'
 
 const success = (position) => {
   const { latitude, longitude } = position.coords
